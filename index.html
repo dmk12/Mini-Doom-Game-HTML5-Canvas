@@ -1,0 +1,44 @@
+<html manifest="manifest.appcache">
+<!-- <html> -->
+<head>
+	<title>Easel spritesheet - v01</title>
+	<script src="lib/easeljs-0.6.0.min.js"></script>
+	<script src="lib/preloadjs-0.3.0.min.js"></script>
+	<script src="lib/soundjs-0.4.0.min.js"></script>
+	
+	<script src="js/main.js"></script>
+
+	<style type="text/css">
+		canvas {
+			border: 1px solid black; 
+			background-color: #111;
+		}
+		canvas.idle{
+			cursor: auto;
+		}
+		canvas.playing{
+			cursor: none;
+		}
+		* {
+		   -moz-user-select: -moz-none;
+		   -khtml-user-select: none;
+		   -webkit-user-select: none;
+
+		   /*
+			 Introduced in IE 10.
+			 See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+		   */
+		   -ms-user-select: none;
+		   user-select: none;
+		}
+	</style>
+
+</head>
+
+
+<body id='body'>
+	<p>Mini Doom</p>
+	<canvas width="640" height="320" id="myCanvas">
+	</canvas>
+</body>
+</html>
